@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Pricing Card AI Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Ce projet consiste à corriger, refactoriser et améliorer un composant React de carte de prix initialement défectueux.  
+Le composant initial présentait des erreurs React (utilisation de `class` au lieu de `className`), un style non responsive et n’était pas réutilisable.
 
-In the project directory, you can run:
+À l’aide d’un prompt IA, le composant a été transformé en un composant fonctionnel réutilisable, avec des props dynamiques et un style propre.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Fonctionnalités
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Composant React fonctionnel `PricingCard` avec props :
+  - `title` (string) : titre de la carte
+  - `price` (string) : prix affiché
+  - `features` (array) : liste des fonctionnalités
+  - `onClick` (function) : callback du bouton
 
-### `npm test`
+- Style simple et moderne sans dépendance à Tailwind CSS (CSS classique)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Bouton fonctionnel avec gestion d’événements
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Cloner le dépôt :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/aceflaatiri-dev/pricing-card-ai.git
+cd pricing-card-ai
+Installer les dépendances :
 
-### `npm run eject`
+bash
+Copy
+Edit
+npm install
+Lancer le projet :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copy
+Edit
+npm start
+Le projet s’ouvrira automatiquement sur http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Structure des fichiers
+src/broken-component.jsx : composant initial défectueux (code avant)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+src/PricingCard.jsx et src/PricingCard.css : composant refactorisé et stylé (code après)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+src/App.jsx : exemple d’utilisation du composant PricingCard
 
-## Learn More
+src/prompt.txt : prompt IA utilisé pour corriger et refactoriser le composant
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Prompt IA utilisé
+Ce composant a des erreurs React (class au lieu de className), il n’est pas responsive, pas réutilisable.
+Corrige ces erreurs, applique Tailwind CSS pour améliorer le style,
+et transforme-le en un composant fonctionnel PricingCard
+avec des props dynamiques title, price, features, onClick.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Auteur
+Acef Laatiri
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Licence
+MIT
