@@ -1,0 +1,4 @@
+Ce composant a des erreurs React (class au lieu de className), il n’est pas responsive, pas réutilisable.
+Corrige ces erreurs, applique Tailwind CSS pour améliorer le style,
+et transforme-le en un composant fonctionnel `PricingCard`
+avec des props dynamiques `title`, `price`, `features`, `onClick`.
